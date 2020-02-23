@@ -11,9 +11,9 @@ end half_adder_BHV;
 architecture a_half_adder of half_adder_BHV is
 
 begin
-  process (a, b)
+  process (a, b) is
   begin
-    if a = '1' then
+    if (a = '1') then
       sum <= not b;
       carry_out <= b;
     else

@@ -11,12 +11,12 @@ end dff_BHV;
 architecture a_dff of dff_BHV is
 
 begin
-process (clk, reset)
+process (clk, reset) is
 begin
-if (reset = '0') then
-q <= 0;
-elsif (clk'event and clk = '1') then
-q <= data;
+if (reset = '0')
+then q <= 0;
+elsif (clk'event and clk = '1')
+then q <= data;
 end if;
 end process;
 
